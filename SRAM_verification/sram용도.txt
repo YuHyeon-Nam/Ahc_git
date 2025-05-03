@@ -1,0 +1,26 @@
+//SRAM 설계 기본 지식//
+
+sram 모델은 어떤 공정 사용 이전에, 즉 메모리 spec이 확정되지 않았을때 RTL 검증환경을
+만드는 과정에서 유용하게 사용됨.
+
+SRAM은 Latch에 데이터를 저장하는 휘발성 메모리이고, line buffer나 FIFO와 같이
+데이터를 임시로 저장해야 하는 경우에 주로 사용된다.
+
+DRAM은 보통 logic과 공정이 다르므로, 하나의 웨이퍼에 함께 만들 수 없다.
+DMA controller를 통해 i/f해줘야해서, 구현이 간편한 sram이 많이 사용됨.
+
+single? dual? -> port의 갯수 차이. (병렬 처리 기술)
+ex) clk -> clk0, clk1처럼 인풋과 아웃풋이 0,1로 두개인거임.
+Throughput (처리율) 측면에서 장점이 있다.
+
+//메모리 기본 동작//
+
+메모리 프로토콜은 CS(chip select)와 WE(Write Enable) 신호를 주로 이루어 작동된다.
+*WE는 read와 write를 구분하는 신호이다.
+
+
+
+
+
+
+

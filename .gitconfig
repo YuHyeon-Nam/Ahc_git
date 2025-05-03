@@ -1,3 +1,5 @@
 [user]
 	name = yeongwancha
 	email = yeongwan6065@naver.com
+[core]
+	autocrlf = true
